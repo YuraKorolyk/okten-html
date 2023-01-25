@@ -1,0 +1,103 @@
+@import "nullstyle.scss";
+
+body {
+   font-size: 38px;
+   font-family: 'Courier New', Courier, monospace;
+}
+.wrapper {
+   
+}
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.widgets {
+   padding-top: 30px;
+   text-align: center;
+   color: #fff;
+		// .widgets__header
+		&__header {
+         min-height: 300px;
+         background: rgb(88, 122, 232);
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin-bottom: 40px;
+         border-radius: 5px;
+      }
+		// .widgets__block
+		&__block {
+         display: flex;
+         column-gap: 40px;
+         margin-bottom: 40px;
+      }
+		// .widgets__item
+		&__item {
+         min-height: 300px;
+         background: rgb(21, 54, 162);
+         flex: 0 1 33.33333%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         border-radius: 5px;
+      }
+		// .widgets__footer
+		&__footer {
+         min-height: 700px;
+         background: rgb(88, 122, 232);
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         border-radius: 5px;
+      }
+}
+
+
+.cards {
+   margin-top: 100px;
+   padding-bottom: 100px;
+   // .cards__inner
+   &__inner {
+      display: flex;
+      column-gap: 30px;
+   }
+   // .cards__item
+   &__item {
+      flex: 0 1 33.33333%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      border: 1px solid rgb(52, 52, 52);
+      padding: 90px 40px 40px 40px;
+   }
+   // .cards__title
+   &__title {
+      font-weight: 600;
+      font-size: 26px;
+      margin-bottom: 30px;
+
+   }
+   // .cards__text
+   &__text {
+      font-size: 20px;
+      margin-bottom: 50px;
+      flex: 1 1 auto;
+      line-height: 120%;
+      color: rgb(89, 89, 89);
+   }
+   // .cards__btn
+   &__btn {
+      & a {
+         border: 1px solid #000;
+         font-size: 20px;
+         padding: 15px 25px;
+         color: #000;
+         transition: .3s;
+         &:hover {
+            background: rgb(78, 78, 78);
+            color: #f2f2f2;
+         }
+      }
+   }
+}

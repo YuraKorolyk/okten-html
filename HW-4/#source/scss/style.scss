@@ -1,0 +1,92 @@
+@import "nullstyle.scss";
+
+.wrapper {
+}
+.first {
+   
+		// .first__row-1
+		&__row-1 {
+         height: 200px;
+         background: #f2f2f2;
+         margin-bottom: 10px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
+		// .first__row-2
+		&__row-2 {
+         display: flex;
+         height: 300px;
+         column-gap:10px;
+         
+      }
+		// .first__column-1
+		&__column-1 {
+         flex: 0 1 75%;
+         background: #f2f2f2;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
+		// .first__column-2
+		&__column-2 {
+         flex: 0 1 25%;
+         background: #f2f2f2;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
+}
+
+@media (max-width: 767px) {
+.first {
+   // .first__row-1
+   &__row-1 {
+      height: 50px;
+      background: #f2f2f2;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+   // .first__row-2
+   &__row-2 {
+      flex-wrap: wrap;
+   }
+   // .first__column-1
+   &__column-1 {
+      flex: 0 1 100%;
+      margin-bottom: 10px;
+   }
+   // .first__column-2
+   &__column-2 {
+      flex: 0 1 100%;
+      background: #f2f2f2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+}
+
+}
+
+.second {
+		// .second__row-1
+		&__row-1 {}
+		// .second__row-2
+		&__row-2 {}
+}
+.row-2 {
+		// .row-2__column-1
+		&__column-1 {}
+		// .row-2__item
+		&__item {}
+		// .row-2__column-2
+		&__column-2 {}
+}
+.column-1 {
+		// .column-1__row-1
+		&__row-1 {}
+		// .column-1__row-2
+		&__row-2 {}
+}
