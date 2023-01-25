@@ -105,7 +105,9 @@
          column-gap: 20px;
          position: absolute;
          bottom: -75px;
-         left: 33.3333%;
+         // left: 33.3333%;
+         left: 50%;
+         transform: translate(-50%, 0);
 
       }
 		// .main__item
@@ -152,7 +154,12 @@
       border-radius: 50%;
       background: #fff;
       top: -50px;
-      left: 33.3333%;
+      left: 50%;
+      transform: translate(-50%, 0);
+      font-size: 40px;
+      & i {
+         
+      }
    }
    // .cards__title
    &__title {
